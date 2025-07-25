@@ -23,7 +23,22 @@ const Users = ({ posts }: { posts: UserProps[] }) => {
       <main className="p-6 bg-gray-50 min-h-screen">
         <h1 className="text-3xl font-bold mb-6">User Directory</h1>
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          
+          {posts.map((user) => (
+            <UserCard key={user.id} name={user.name} id={0} username={""} email={""} address={{
+              street: "",
+              suite: "",
+              city: "",
+              zipcode: "",
+              geo: {
+                lat: "",
+                lng: ""
+              }
+            }} phone={""} website={""} company={{
+              name: "",
+              catchPhrase: "",
+              bs: ""
+            }} />
+          ))}
         </div>
       </main>
     </>
