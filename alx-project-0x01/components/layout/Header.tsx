@@ -4,7 +4,7 @@ const Header: React.FC = () => {
     return (
         <header>
             <h1>My Application</h1>
-            <Link href='/user'>Users</Link>
+            <Link href='/users' className="hover:underline">Users</Link>
         </header>
     );
 };
