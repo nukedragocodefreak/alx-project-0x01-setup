@@ -27,6 +27,7 @@ export interface UserProps {
     catchPhrase: string;
     bs: string;
   };
+onSubmit: (post: UserProps) => void;
 }
 
 export interface PostData {
