@@ -4,7 +4,7 @@ import { UserProps } from "../../interfaces";
 import UserCard from "../../components/common/UserCard";
 
 export async function getStaticProps() {
-  const response = await fetch("http://jsonplaceholder.typicode.com/users");
+  const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const posts = await response.json();
 
   return {
